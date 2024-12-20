@@ -11,4 +11,14 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  {
+    rules: {
+      "no-unused-vars": [
+        "warn",
+        {varsIgnoredPattern: "React$"}
+      ],
+      "react/react-in-jsx-scope": "off",
+
+    }
+  }
 ];
